@@ -473,7 +473,9 @@ public class MintySpire implements
                 });
         registerUIElement(BPFBtn, true);
 
-        if (Settings.language == Settings.GameLanguage.ENG || Settings.language == Settings.GameLanguage.ZHS) {
+        if (Settings.language == Settings.GameLanguage.ENG ||
+            Settings.language == Settings.GameLanguage.ZHS ||
+            Settings.language == Settings.GameLanguage.ZHT) {
             ModLabeledToggleButton ICBtn = new ModLabeledToggleButton(TEXT[2], xPos, yPos, Settings.CREAM_COLOR, FontHelper.charDescFont, showIC(), settingsPanel, l -> {
             },
                     button ->
@@ -487,7 +489,7 @@ public class MintySpire implements
         }
 
         if (pages.size() > 1) {
-            ModLabeledButton FlipPageBtn = new ModLabeledButton(TEXT[14], xPos + 450f, orgYPos + 45f, Settings.CREAM_COLOR, Color.WHITE, FontHelper.cardEnergyFont_L, settingsPanel,
+            ModLabeledButton FlipPageBtn = new ModLabeledButton(TEXT[14], xPos + 450f, orgYPos + 45f, Settings.CREAM_COLOR, Color.WHITE, FontHelper.charDescFont, settingsPanel,
                     button ->
                     {
                         if (pages.containsKey(curPage + 1)) {
@@ -589,6 +591,8 @@ public class MintySpire implements
         switch (Settings.language) {
             case ZHS:
                 return "zhs";
+            case ZHT:
+                return "zht";
             case KOR:
                 return "kor";
             case RUS:

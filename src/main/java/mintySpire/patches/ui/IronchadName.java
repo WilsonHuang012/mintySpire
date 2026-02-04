@@ -22,6 +22,8 @@ public class IronchadName {
                     return SpireReturn.Return("the Ironchad");
                 } else if(Settings.language == Settings.GameLanguage.ZHS) {
                     return SpireReturn.Return("铁甲战逝");
+                } else if(Settings.language == Settings.GameLanguage.ZHT) {
+                    return SpireReturn.Return("鐵甲戰逝");
                 }
             }
             return SpireReturn.Continue();

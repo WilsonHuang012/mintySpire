@@ -80,3 +80,6 @@ $RECYCLE.BIN/
 .idea/workspace.xml
 .idea/workspace.xml
 dependency-reduced-pom.xml
+
+#VSCode
+.vscode/
